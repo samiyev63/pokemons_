@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <section class="header__section container">
+            <img class="header__logo" src="./img/pokemon_logo 1.png" alt="logo">
+            <button class="header__like--btn">
+                <i class="far fa-heart fa-3x"></i>
+            </button>
+        </section>
+    </header>
+    <main class="main">
+        <section class="wrapper">
+            <div class="container">
+                <form class="wrapper__form">
+                    <select name="types" class="wrapper__select select" id="wrapper__select">
+                        <option value="All">All</option>
+                    </select>
+                    <input type="search" class="wrapper__search" id="wrapper__search" placeholder="Search.....">
+                    <select name="alphabet" class="wrapper__select filter" id="wrapper__filter">
+                        <option value="All">All</option>
+                        <option value="Aa__Zz">Aa__Zz</option>
+                        <option value="Zz__Aa">Zz__Aa</option>
+                        <option value="Young__Old">Young__Old</option>
+                        <option value="Old__Young">Old__Young</option>
+                        <option value="Light__Heavy">Light__Heavy</option>
+                        <option value="Heavy__Light">Heavy__Light</option>
+                    </select>
+                    <button type="submit" class="wrapper__button" id="wrapper__button">Search</button>
+                </form>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <aside class="sidebar">
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar-header">
+                            <button class="close-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div> 
+                        <div class="fav__card">
+                            <ul class="sidebar__list">
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <ul class="cards__menu"> 
+                    <template id="template">
+                        <li class="cards__item">
+                            <img class="cards__img" src="">
+                            <hr class="cards__hr">
+                            <div class="cards__box">
+                                <div class="cards__box--left">
+                                    <h2 class="cards__title">Pokemons</h2>
+                                    <p class="cards__type">Grass, Poison</p>
+                                </div>
+                                <button class="cards__like--btn far fa-heart fa-2x " data-id = 1>
+                                     
+                                </button>
+                            </div> 
+                            <div class="cards__texts">
+                                <p class="cards__weight">6.9kg</p>
+                                <p class="cards__age">99</p>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

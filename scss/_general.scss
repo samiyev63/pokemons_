@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  background-color:  #FFD845;
+}
+
+.container {
+  width: 1340px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 689px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 320px;
+    margin: 10px;
+  }
+}
